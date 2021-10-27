@@ -17,4 +17,11 @@ public class MemberServiceImpl implements MemberService {
     public void insert(MemberVO vo) {
         memberMapper.insert(vo);
     }
+
+    @Override
+    public MemberVO read(Long mno) {
+        return memberMapper.read(mno);
+    }
+
+
 }

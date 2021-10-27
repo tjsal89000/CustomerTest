@@ -9,4 +9,11 @@
 
     </insert>
 
+    <select id="read" resultType="com.customerone.test.domain.MemberVO">
+        SELECT mno, name, password
+        FROM crud_table
+        WHERE mno = #{mno}
+    </select>
+
+
 </mapper>
